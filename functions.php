@@ -56,15 +56,10 @@ function dschool_theme_setup() {
 	add_theme_support( 'hybrid-core-shortcodes' );
 	add_theme_support( 'hybrid-core-post-meta-box' );
 	add_theme_support( 'hybrid-core-theme-settings', array( 'footer', 'about' ) );
-	//add_theme_support( 'hybrid-core-meta-box-footer' );
-	//add_theme_support( 'hybrid-core-drop-downs' );
 	add_theme_support( 'hybrid-core-seo' );
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
 	/* Add theme support for framework extensions. */
-	//add_theme_support( 'theme-layouts', array( '1c', '2c-l', '2c-r', '3c-l', '3c-r', '3c-c' ) );
-	//add_theme_support( 'post-stylesheets' );
-	//add_theme_support( 'dev-stylesheet' );
 	add_theme_support( 'loop-pagination' );
 	add_theme_support( 'get-the-image' );
 	add_theme_support( 'breadcrumb-trail' );
@@ -72,7 +67,6 @@ function dschool_theme_setup() {
 
 	/* Add theme support for WordPress features. */
 	add_theme_support( 'automatic-feed-links' );
-	//add_custom_background();
 
 	/* Filter the breadcrumb trail arguments. */
 	add_filter( 'breadcrumb_trail_args', 'dschool_breadcrumb_trail_args' );
@@ -86,9 +80,7 @@ function dschool_theme_setup() {
    /* Additional JS */
     if (!is_admin()) {
     	$url = get_bloginfo('template_url');
-    	
- 		//wp_deregister_script( 'jquery');
- 		
+    	 		
  		/* Register Scripts */
  		wp_register_script( 'modernizr', $url . '/js/modernizr-1.7.min.js','','',false);
  		wp_register_script( 'jquery-cycle', $url . '/js/jquery.cycle.min.js','','',true);
