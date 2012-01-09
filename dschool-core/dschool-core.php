@@ -48,7 +48,7 @@ class DSCHOOLCore {
 	function dschool_extensions() {
 
 		/* Setup the DSCHOOL Custom Post Types */
-		//require_once( DSCHOOL_DIR . '/extensions/custom-post-types.php' );
+		require_once( DSCHOOL_DIR . '/extensions/custom-post-types.php' );
 		
 		/* Show IDs */
 		//require_if_theme_supports( 'show-ids', DSCHOOL_DIR . '/extensions/show-ids.php' );
