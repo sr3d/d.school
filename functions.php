@@ -70,12 +70,6 @@ function dschool_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	//add_custom_background();
 
-	/* Add the breadcrumb trail just after the container is open.
-	if (!is_front_page()) {
-	add_action( "{$prefix}_open_main", 'breadcrumb_trail' );
-	}
-	*/
-
 	/* Filter the breadcrumb trail arguments. */
 	add_filter( 'breadcrumb_trail_args', 'dschool_breadcrumb_trail_args' );
 
