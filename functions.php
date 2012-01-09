@@ -27,9 +27,13 @@
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-/* Load the core theme framework. */
+/* Load the hybrid core theme framework. */
 require_once( trailingslashit( TEMPLATEPATH ) . 'hybrid-core/hybrid.php' );
 $theme = new Hybrid();
+
+/* Load the dschool core. */
+require_once( trailingslashit( TEMPLATEPATH ) . 'dschool-core/dschool-core.php' );
+$theme_eex = new DSCHOOLCore();
 
 /* Do theme setup on the 'after_setup_theme' hook. */
 add_action( 'after_setup_theme', 'dschool_theme_setup' );
