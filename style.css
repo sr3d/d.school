@@ -209,7 +209,7 @@ background-image: url('images/menu_about_us.png');
 
 #header {overflow: hidden;clear: both;background: #fff;border: 1px solid #dfdfdf;position:relative;display:none;}
 #branding {float: left;width: 440px;}
-#site-title {font: normal normal bold 25px/25px Arial, Verdana, sans-serif;margin: 0 0 10px 0;text-shadow: 2px 2px 2px #ccc;}
+#site-title {font: normal normal bold 25px/25px Arial, Verdana, sans-serif;margin: 0 0 10px 0;}
 #site-title a {color: #000;border-bottom: none;display:block;width: 250px;height:94px;overflow:hidden;text-decoration:none;border: none;margin-top:32px;}
 #site-title a:hover {text-decoration: none;border:none;}
 #site-description {display:none;}
