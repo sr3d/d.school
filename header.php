@@ -83,7 +83,7 @@
 			
 			<div id="banner-feature">
 					<?php global $post, $wpdb; ?>
-					<?php $img_id = $wpdb->get_results("SELECT ID, menu_order FROM $wpdb->posts where post_parent = 14 and (post_mime_type = 'image/jpeg' OR post_mime_type = 'image/gif' OR post_mime_type = 'image/png') and post_type = 'attachment' ORDER BY menu_order ASC");?>
+					<?php $img_id = $wpdb->get_results("SELECT ID, menu_order FROM $wpdb->posts where post_parent = " . $post->ID . " and (post_mime_type = 'image/jpeg' OR post_mime_type = 'image/gif' OR post_mime_type = 'image/png') and post_type = 'attachment' ORDER BY menu_order ASC");?>
 					<?php  
 					foreach ($img_id as $img_temp) {
 						$img_array_temp = wp_get_attachment_image_src($img_temp->ID,'full',false);
@@ -117,7 +117,6 @@
 					$i++;	
 					}	
 					?>
-
 					var winSlides = [<?php echo $display; ?>];
 					var winSlideDesc = [<?php echo $display2; ?>];
 					</script>
