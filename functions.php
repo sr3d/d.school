@@ -95,6 +95,7 @@ function dschool_add_remove_scripts(){
 		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js','','',true);
 		
 		/* Enqueue Scripts */
+		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'jquery-cycle' );
 		wp_enqueue_script( 'jquery-qtip' );
