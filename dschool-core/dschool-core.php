@@ -49,6 +49,10 @@ class DSCHOOLCore {
 
 		/* Setup the DSCHOOL Custom Post Types */
 		require_once( DSCHOOL_DIR . '/extensions/custom-post-types.php' );
+
+		/* Setup the DSCHOOL Custom Meta Boxes */
+		require_once( DSCHOOL_DIR . '/extensions/custom-meta-boxes.php' );
+
 		
 		/* Show IDs */
 		//require_if_theme_supports( 'show-ids', DSCHOOL_DIR . '/extensions/show-ids.php' );
