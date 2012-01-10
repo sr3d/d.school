@@ -137,11 +137,10 @@
                 return; 
  
             // shift or pop from our slide array  
-            var nextSlideSrc = fwd ? slides.shift() : slides.pop(); 
-            var nextSlideDesc = fwd ? slideDesc.shift() : slideDesc.pop(); 
+            var nextSlide = fwd ? slideshow.shift() : slideshow.pop();
              
             // add our next slide 
-            opts.addSlide('<div class="slide" style="background:url('+nextSlideSrc+')" no-repeat scroll top left;"><!-- <span>'+nextSlideDesc+'</span> --></div>', fwd == false); 
+            opts.addSlide(nextSlide, fwd == false); 
      }
 		
 	</script>
