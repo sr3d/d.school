@@ -92,7 +92,7 @@
 						$img_desc[] =  $img_desc_temp->post_content;
 					}
 					$i = 0;
-					while ($i <= 0) { 
+					while ($i <= 1) { 
 					?>		
 			 		<div class="slide" style="background: url(<?php echo $img_array[$i]; ?>) no-repeat scroll top left;"><!-- <span><?php echo $img_desc[$i]; ?></span> --></div>
 			 		<?php $i++;	
@@ -106,7 +106,7 @@
 					$display = '';
 					$display2 = '';
 					while ($i <= $limit) { 
-						if ($i >= 1) {
+						if ($i > 1) {
 							$display .= "'" . $img_array[$i] . "'";
 							$display2 .= "'" . $img_desc[$i] . "'";
 							if ($i != $limit ) {
