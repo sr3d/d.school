@@ -89,7 +89,7 @@ function dschool_add_remove_scripts(){
     if (!is_admin()) {
     	 		
  		/* Register Scripts */
- 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr-1.7.min.js','','',false);
+ 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr.js','','',false);
  		wp_register_script( 'jquery-cycle', THEME_URI . '/js/jquery.cycle.min.js','','',true);
 		wp_register_script( 'jquery-qtip', THEME_URI . '/js/jquery.qtip-1.0.0-rc3.min.js','','',true);
 		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js','','',true);
