@@ -84,14 +84,12 @@ function dschool_theme_setup() {
  		/* Register Scripts */
  		wp_register_script( 'modernizr', $url . '/js/modernizr-1.7.min.js','','',false);
  		wp_register_script( 'jquery-cycle', $url . '/js/jquery.cycle.min.js','','',true);
-        //wp_register_script( 'jquery-masonry', $url . '/js/jquery.masonry.min.js','','',true);
 		wp_register_script( 'jquery-qtip', $url . '/js/jquery.qtip-1.0.0-rc3.min.js','','',true);
 		wp_register_script( 'jquery-hoverintent', $url . '/js/jquery.hoverIntent.minified.js','','',true);
 		
 		/* Enqueue Scripts */
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'jquery-cycle' );
-		//wp_enqueue_script( 'jquery-masonry' );
 		wp_enqueue_script( 'jquery-qtip' );
 		wp_enqueue_script( 'jquery-hoverintent' );
         
