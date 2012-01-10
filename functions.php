@@ -126,8 +126,9 @@ function dschool_site_title() {
  * @since 0.1.0
  */
 function add_small_logo() {
-	$template_url = get_bloginfo('stylesheet_directory');
-	echo '<a href="/" title="d.school" class="menu-logo"><img src="' . $template_url . '/images/logo-small.png" alt="d.school" /></a>';
+	$title = get_bloginfo( 'name' )
+	$template_url = esc_attr( get_bloginfo('stylesheet_directory') );
+	echo '<a href="/" title="' . $title . '" class="menu-logo"><img src="' . $template_url . '/images/logo-small.png" alt="' . $title . '" /></a>';
 }
 
 /**
