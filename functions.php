@@ -97,9 +97,6 @@ function dschool_theme_setup() {
         
 	}
 	
-	add_filter("{$prefix}_page_meta_box_args", 'quote_meta', $meta);
-	add_filter("{$prefix}_page_meta_box_args", 'class_meta', $meta);
-
 }
 
 /**
