@@ -93,9 +93,11 @@
 					}
 					$i = 0;
 					while ($i <= 1) { 
+						if (!empty($img_array[$i])) {
 					?>		
 			 		<div class="slide" style="background: url(<?php echo $img_array[$i]; ?>) no-repeat scroll top left;"><!-- <span><?php echo $img_desc[$i]; ?></span> --></div>
-			 		<?php $i++;	
+			 		<?php }
+			 			$i++;	
 					}		
 					?>
 					
