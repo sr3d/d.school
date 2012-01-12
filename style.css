@@ -377,7 +377,7 @@ background-image: url('images/menu_about_us.png');
 
 #sidebar-primary {font-size: 0.8em;line-height: 160%;color: #666;width: 33%;float: right;}
 
-.widget-wrap {padding: 27px 0 0 5px; max-width: 355px;}
+.widget-wrap {padding: 27px 5px 0 5px; max-width: 355px;}
 
 /* Widget title */
 #sidebar-primary .widget-title {font-size: 19px;line-height:1;display:inline-block;padding:5px 4px 17px 4px;background: #fff url(images/stripe.gif) repeat-x scroll bottom left;text-transform:uppercase;font-size-adjust: 0.5;color:#58595b;margin-bottom:19px;outline:0;text-decoration:none;border:none;font-family: "Alternate Gothic No.2", Helvetica, Arial, sans-serif;font-weight:bold;}
