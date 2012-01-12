@@ -375,7 +375,7 @@ background-image: url('images/menu_about_us.png');
 /* Primary and Secondary sidebars
 =============================================================================*/
 
-#sidebar-primary {font-size: 0.8em;line-height: 160%;color: #666;width: 33%;float: right;}
+#sidebar-primary {font-size: 0.8em;line-height: 160%;color: #666;width: 33%;float: right;padding-bottom:17px;}
 
 .widget-wrap {padding: 27px 5px 0 5px; max-width: 355px;}
 
@@ -647,6 +647,16 @@ a.btn-back-class:hover {text-decoration:none;border: none;color: #58595B;}
 #twitter-tools a.aktt_tweet_time:hover {color: #58595b !important; border: none;}
 #twitter-tools .aktt_more_updates a {text-transform:uppercase;background:transparent url(images/more-arrow.gif) no-repeat scroll center right;padding-right: 13px;display:inline-block;text-decoration:none;border: none;font-family: "Alternate Gothic No.2", Helvetica, Arial, sans-serif;font-size:18px;line-height:24px;color: #939598;font-weight:normal;}
 #twitter-tools .aktt_more_updates a:hover {text-decoration:none;border: none;color: #58595B;}
+
+/* Twitter Widget Pro */
+.wordpress .widget-widget_twitter a {border-bottom:1px dotted #ef3e42;}
+.wordpress .widget-widget_twitter a:hover {border-bottom:1px solid #ef3e42;}
+.wordpress .widget-widget_twitter ul, 
+.wordpress .widget-widget_twitter ul li {list-style:none; padding: 0;margin: 0;}
+.wordpress .widget-widget_twitter ul li {padding-bottom:15px;}
+.wordpress .widget-widget_twitter .entry-meta a {color: #939598 !important; font-weight:normal;border: none; background:none; font-family: elvetica,Arial,sans-serif;font-size:12px;letter-spacing:normal;text-transform:none;}
+.wordpress .widget-widget_twitter .entry-meta a:hover {color: #58595b !important; border: none;font-size:12px; letter-spacing:normal;}
+.wordpress .widget-widget_twitter .entry-content {padding: 0;margin:0;border: none;float: none;font-family: elvetica,Arial,sans-serif;text-transform:none;}
 
 /* Flickr Widget */
 #flickrlist {list-style:none;margin: 0;padding: 0;}
