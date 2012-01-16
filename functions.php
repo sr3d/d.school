@@ -76,7 +76,22 @@ function dschool_theme_setup() {
 
 	/* Add the logo to the end of the primary menu. */
 	add_action( "{$prefix}_close_menu_primary", 'add_small_logo' );	
-	
+
+	/* Remove some of the built in meta tags to simplify the header. */	
+	add_filter( "{$prefix}_meta_author", '__return_false' );
+	add_filter( "{$prefix}_meta_copyright", '__return_false' );	
+	add_filter( "{$prefix}_meta_revised", '__return_false' );
+	add_filter( "{$prefix}_meta_template", '__return_false' );
+	//remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
+	//remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
+	remove_action( 'wp_head', 'wp_generator', 1 ); // WP version
+	remove_action('wp_head', 'rsd_link'); // Really Simple Discovery service endpoint, EditURI link
+	remove_action('wp_head', 'wlwmanifest_link'); // windows live writer
+	remove_action( 'wp_head', 'index_rel_link' ); // index link
+	remove_action( 'wp_head', 'parent_post_rel_link_wp_head ', 10, 0 ); // prev link
+	remove_action( 'wp_head', 'start_post_rel_link_wp_head ', 10, 0 ); // start link
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Display relational links for the posts adjacent to the current post.
+
 }
 
 /**
