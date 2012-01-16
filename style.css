@@ -674,8 +674,91 @@ a.btn-back-class:hover {text-decoration:none;border: none;color: #58595B;}
 	overflow:hidden!important;
 }
 
+/* Mailchimp Widget */
+.wordpress #sidebar-primary #mc_message {
+	margin-bottom:5px;
+}
+.wordpress #sidebar-primary .mc_error_msg { 
+	color: red;
+}
+.wordpress #sidebar-primary .mc_success_msg {
+	color: green;
+}
+.wordpress #sidebar-primary .mc_merge_var{ 
+	padding:0;
+	margin:0 0 5px 0;
+}
+.wordpress #sidebar-primary #mc_signup_form input[type="text"] { 
+	width: 265px;
+}
+.wordpress #sidebar-primary .mc_required { 
+	color: red;
+}
+.wordpress #sidebar-primary .mc_custom_border_hdr {
+	font-size: 1.2em;
+	padding:5px 10px;
+	width: 100%;
+}
+.wordpress #sidebar-primary #mc_signup_container {}
+.wordpress #sidebar-primary #mc_signup_form {}
+.wordpress #sidebar-primary #mc_signup_form .mc_var_label {}
+.wordpress #sidebar-primary #mc_signup_form .mc_input {}
+.wordpress #sidebar-primary #mc-indicates-required { 
+	width:100%;
+}
+.wordpress #sidebar-primary #mc_display_rewards {}
+.wordpress #sidebar-primary .mc_interests_header { 
+	font-weight:bold;
+}
+.wordpress #sidebar-primary div.mc_interest{
+	width:100%;
+	margin-bottom:5px;
+}
+.wordpress #sidebar-primary #mc_signup_form input.mc_interest {}
+.wordpress #sidebar-primary #mc_signup_form select {}
+.wordpress #sidebar-primary #mc_signup_form label.mc_interest_label { 
+	display:inline;
+}
+.wordpress #sidebar-primary .mc_signup_submit { 
+	padding-top:5px;
+	text-align:center; 
+}
 
-.mobile 
+#mc_signup_submit {
+	font-family: "Alternate Gothic No.2", Helvetica, Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight:normal;
+	color: #fff;
+	border: none;
+	display:block;
+	cursor:pointer;
+	background:#b4b4b4;
+	text-align:center;
+	padding: 10px 0;
+	margin: 0 0 25px 0;
+	width: 271px;
+	height:auto;
+	outline:none;
+}
+.wordpress #sidebar-primary ul.mc_list {
+	list-style-type: none;
+	padding: 0;
+	margin:  0 0 5px 0;
+}
+.wordpress #sidebar-primary ul.mc_list li {
+	font-size: 12px;
+}
+.wordpress .#sidebar-primary ui-datepicker-year {
+	display: none;
+}
+.wordpress #sidebar-primary #ui-datepicker-div.show .ui-datepicker-year {
+	display: inline;
+	padding-left: 3px
+}
+
+.wordpress #sidebar-primary #mc-indicates-required {
+	display:none;	
+}
 
 
 /* Responsiveness
