@@ -59,8 +59,8 @@ class DSCHOOLCore {
 		/* Add facbook async js */
 		require_if_theme_supports( 'facebook-init', DSCHOOL_DIR . '/extensions/facebook-init.php' );
 
-		/* Show IDs */
-		//require_if_theme_supports( 'show-ids', DSCHOOL_DIR . '/extensions/show-ids.php' );
+		/* Add facbook opengraph */
+		require_if_theme_supports( 'facebook-opengraph', DSCHOOL_DIR . '/extensions/facebook-opengraph.php' );
 
 	}
 	
