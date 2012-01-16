@@ -739,6 +739,7 @@ a.btn-back-class:hover {text-decoration:none;border: none;color: #58595B;}
 	width: 271px;
 	height:auto;
 	outline:none;
+	font-size: 16px;
 }
 .wordpress #sidebar-primary ul.mc_list {
 	list-style-type: none;
