@@ -20,10 +20,12 @@
 function facebook_meta() {
 
 	$image = get_the_image( array( 'format' => 'array' ) ); 
-	$image = $image['url'];
 	
-	if (!$image)
+	if (!empty($image)) {
+		$image = $image['url'];
+	} else {
 		$image = "";
+	}
 	
 	?>
 <!-- Facebook Meta --> 

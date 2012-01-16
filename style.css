@@ -236,9 +236,8 @@ background-image: url('images/menu_about_us.png');
 /* Posts
 =============================================================================*/
 
-.hentry {overflow: hidden;margin: 0 0 25px 0;font-size: 0.8em;line-height: 160%;color: #666;}
+.hentry {overflow: hidden;margin: 0 0 25px 0;font-size: 0.8em;line-height: 160%;color: #666; position:relative;}
 .singular .hentry {margin: 0;}
-
 
 
 /* Post titles */
@@ -761,6 +760,26 @@ a.btn-back-class:hover {text-decoration:none;border: none;color: #58595B;}
 	display:none;	
 }
 
+/*Share Box */
+#sharebox {
+	width: 100%;
+	list-style: none;
+	background: #ffffff;
+	border-bottom:2px solid #cccccc;
+	float: left;
+	margin: 0 0 45px 0;
+	padding: 20px 0 20px 19px;
+}
+
+#sharebox li {
+	display:block;
+	float: left;
+	width:75px;
+}
+
+#sharebox li.sb_fb {
+	width: 68px;
+}
 
 /* Responsiveness
 =============================================================================*/
