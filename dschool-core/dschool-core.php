@@ -53,6 +53,9 @@ class DSCHOOLCore {
 		/* Setup the DSCHOOL Custom Meta Boxes */
 		require_once( DSCHOOL_DIR . '/extensions/custom-meta-boxes.php' );
 
+		/* Setup the DSCHOOL Share Box */
+		require_once( DSCHOOL_DIR . '/extensions/share-box.php' );
+
 		
 		/* Show IDs */
 		//require_if_theme_supports( 'show-ids', DSCHOOL_DIR . '/extensions/show-ids.php' );
