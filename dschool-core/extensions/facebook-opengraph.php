@@ -52,7 +52,7 @@ function fb_description() {
 	
 	if(!empty($post->post_excerpt)){
 		$description = $post->post_excerpt;
-	} else {
+	} else {	
 		$description = trim(strip_shortcodes(strip_tags($post->post_content)));
 		$pos0 = strpos($description, '.')+1;
 		$pos0 = ($pos0 === false) ? strlen($description) : $pos0;
@@ -66,7 +66,11 @@ function fb_description() {
 		$description = str_replace("\r","",$description);
 		$description = str_replace("\"","'",$description);
 		$description = nl2br($description);
-	} 
+	} 	
+	
+	if (is_front_page()) {
+		$description = get_bloginfo('description');
+	}	
 	
 	return $description;
 }
