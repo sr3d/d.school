@@ -31,7 +31,7 @@ function sharebox_insert_html() {
 <?php }
 }
 
-add_action( "{$prefix}_open_entry", 'sharebox_insert_html' );
+add_action( "{$prefix}_close_entry", 'sharebox_insert_html' );
 
 
 ?>
