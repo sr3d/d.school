@@ -38,7 +38,9 @@ function facebook_meta() {
 <meta property="og:description" content="<?php echo fb_description(); ?>" />  
 <meta property="og:type" content="website" />  
 <meta property="og:image" content="<?php echo $image; ?>" /> 
-<?php }
+<?php } ?>
+<!-- END Facebook Meta -->
+<?php
 
 }
 
