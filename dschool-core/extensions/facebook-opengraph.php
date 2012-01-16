@@ -18,20 +18,26 @@
  */
 
 function facebook_meta() {
+
 	$image = get_the_image( array( 'format' => 'array' ) ); 
+	$image = $image['url'];
+	
+	if (!$image)
+		$image = "";
+	
 	?>
 <!-- Facebook Meta --> 
 <?php if (is_single()) { ?>
 <meta property="og:title" content="<?php the_title(); ?>"/>
 <meta property="og:type" content="article" />
 <meta property="og:url" content="<?php the_permalink(); ?>"/>
-<meta property="og:image" content="<?php echo $image['url']; ?>"/>
+<meta property="og:image" content="<?php echo $image; ?>"/>
 <meta property="og:description" content="<?php echo fb_description(); ?>" />
 <?php } else { ?>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />  
 <meta property="og:description" content="<?php echo fb_description(); ?>" />  
 <meta property="og:type" content="website" />  
-<meta property="og:image" content="<?php echo $image['url']; ?>" /> 
+<meta property="og:image" content="<?php echo $image; ?>" /> 
 <?php }
 
 }
