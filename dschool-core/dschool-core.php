@@ -62,6 +62,9 @@ class DSCHOOLCore {
 		/* Add facbook opengraph */
 		require_if_theme_supports( 'facebook-opengraph', DSCHOOL_DIR . '/extensions/facebook-opengraph.php' );
 
+		/* Add facbook opengraph */
+		require_if_theme_supports( 'show-ids', DSCHOOL_DIR . '/extensions/show-ids.php' );
+
 	}
 	
 	function dschool_shortcodes() {
