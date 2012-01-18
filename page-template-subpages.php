@@ -66,8 +66,6 @@ get_header(); // Loads the header.php template. ?>
 						<?php }?>
 						</div>
 						
-						<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">[entry-edit-link]</div>' ); ?>
-
 						<?php do_atomic( 'close_entry' ); // dschool_close_entry ?>
 
 					</div><!-- .hentry -->
@@ -88,8 +86,11 @@ get_header(); // Loads the header.php template. ?>
 		   
 		<?php $wp_query = clone $temp_query; ?>
 		
-		<?php } //end if have sub pages ?>	
-			
+		<?php } //end if have sub pages ?>
+		
+		<?php wp_reset_query(); ?>
+
+		<?php echo apply_atomic_shortcode( 'entry_meta', '<div class="entry-meta">[entry-edit-link]</div>' ); ?>
 
 		</div><!-- .hfeed -->
 
