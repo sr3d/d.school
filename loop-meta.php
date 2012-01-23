@@ -34,15 +34,14 @@
 
 		<div id="hcard-<?php the_author_meta( 'user_nicename', $id ); ?>" class="loop-meta vcard">
 
-			<h1 class="loop-title fn n"><span><?php the_author_meta( 'display_name', $id ); ?> - Author Archive</span></h1>
+			<h1 class="loop-title fn n"><span><?php the_author_meta( 'display_name', $id ); ?></span></h1>
 
-			<!--
 			<div class="loop-description">
 				<?php echo get_avatar( get_the_author_meta( 'user_email', $id ), '100', '', get_the_author_meta( 'display_name', $id ) ); ?>
 				<p class="user-bio">
 					<?php the_author_meta( 'description', $id ); ?>
 				</p>
-			</div>.loop-description -->
+			</div><!-- .loop-description -->
 
 		</div><!-- .loop-meta -->
 

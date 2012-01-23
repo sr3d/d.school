@@ -36,7 +36,7 @@ get_header(); // Loads the header.php template. ?>
 						<div class="entry-content">
 						
 						<ul class="category-list">
-						<?php foreach((get_the_category()) as $category) { echo '<li><a href="/category/' . $category->category_nicename . '/" >' . $category->cat_name . '</a></li>'; } ?>
+						<?php foreach((get_the_category()) as $category) { echo '<li><a href="' . get_bloginfo('url') . '/category/' . $category->category_nicename . '/" >' . $category->cat_name . '</a></li>'; } ?>
 						</ul>
 						
 							<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
