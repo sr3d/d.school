@@ -15,8 +15,6 @@
 
 				<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 
-				<?php get_sidebar( 'secondary' ); // Loads the sidebar-secondary.php template. ?>
-
 				<?php } ?>
 
 				<?php do_atomic( 'close_main' ); // dschool_close_main ?>
