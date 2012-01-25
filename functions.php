@@ -50,7 +50,7 @@ function dschool_theme_setup() {
 	$prefix = hybrid_get_prefix();
 
 	/* Add theme support for core framework features. */
-	add_theme_support( 'hybrid-core-menus', array( 'primary' ) );
+	add_theme_support( 'hybrid-core-menus', array( 'primary', 'secondary' ) );
 	add_theme_support( 'hybrid-core-sidebars', array( 'primary' ) );
 	add_theme_support( 'hybrid-core-widgets' );
 	add_theme_support( 'hybrid-core-shortcodes' );

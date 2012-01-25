@@ -71,16 +71,12 @@
 
 		<?php do_atomic( 'after_header' ); // dschool_after_header ?>
 
-		<?php //get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
-
 		<?php if (is_front_page()) { ?>
 		
 		<div id="banner">
-			
-			<ul id="banner-links">
-				<?php echo preg_replace('@\<li([^>]*)>\<a([^>]*)>(.*?)\<\/a>@i', '<li$1><a$2><span>$3</span></a>', wp_list_bookmarks('category=46&title_li=&categorize=0&echo=0&orderby=notes&order=asc')  ); ?>
-			</ul><!-- #banner-links -->
-			
+
+			<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
+
 			<div id="banner-feature">
 					<?php global $post, $wpdb; ?>
 					<?php $img_id = $wpdb->get_results("SELECT ID, menu_order FROM $wpdb->posts where post_parent = " . $post->ID . " and (post_mime_type = 'image/jpeg' OR post_mime_type = 'image/gif' OR post_mime_type = 'image/png') and post_type = 'attachment' ORDER BY menu_order ASC");?>
