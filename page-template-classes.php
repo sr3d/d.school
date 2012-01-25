@@ -50,8 +50,6 @@ get_header(); // Loads the header.php template. ?>
 
 					<?php do_atomic( 'after_entry' ); // dschool_after_entry ?>
 
-					<?php get_sidebar( 'after-singular' ); // Loads the sidebar-after-singular.php template. ?>
-
 					<?php do_atomic( 'after_singular' ); // dschool_after_singular ?>
 
 				<?php endwhile; ?>
@@ -129,8 +127,6 @@ get_header(); // Loads the header.php template. ?>
 					</div><!-- .hentry -->
 
 					<?php do_atomic( 'after_entry' ); // dschool_after_entry ?>
-
-					<?php get_sidebar( 'after-singular' ); // Loads the sidebar-after-singular.php template. ?>
 
 					<?php do_atomic( 'after_singular' ); // dschool_after_singular ?>
 
