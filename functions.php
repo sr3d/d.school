@@ -98,27 +98,29 @@ function dschool_theme_setup() {
  * Add new scripts and remove unused scripts
  *
  */
-function dschool_add_remove_scripts(){
+function dschool_scripts(){
 
    /* Additional Theme JS */
     if (!is_admin()) {
     	 		
  		/* Register Scripts */
- 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr.js','','',false);
- 		wp_register_script( 'jquery-cycle', THEME_URI . '/js/jquery.cycle.min.js','','',true);
-		wp_register_script( 'jquery-qtip', THEME_URI . '/js/jquery.qtip-1.0.0-rc3.min.js','','',true);
-		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js','','',true);
-		
+ 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr.js',array('jquery'),'',false);
+ 		wp_register_script( 'jquery-cycle', THEME_URI . '/js/jquery.cycle.min.js',array('jquery'),'',true);
+		wp_register_script( 'jquery-qtip', THEME_URI . '/js/jquery.qtip-1.0.0-rc3.min.js',array('jquery'),'',true);
+		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js',array('jquery'),'',true);
+		wp_register_script( 'dschool', THEME_URI . '/js/dschool.js',array('jquery'),'',true);
+
 		/* Enqueue Scripts */
-		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'jquery-cycle' );
 		wp_enqueue_script( 'jquery-qtip' );
 		wp_enqueue_script( 'jquery-hoverintent' );
+		wp_enqueue_script( 'dschool' );
 
 	}
+	
 }
-add_action( 'init', 'dschool_add_remove_scripts', 100 );
+add_action( 'wp_print_scripts', 'dschool_scripts', 100 );
 
 /**
  * Custom site title (include logo)
