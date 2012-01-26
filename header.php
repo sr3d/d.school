@@ -19,13 +19,9 @@
 <head>
 <link rel="stylesheet" href="http://f.fontdeck.com/s/css/AWO2Ouor1Nflm48ej7gs0EL1BPU/dschool.stanford.edu/5774.css" type="text/css" />
 <meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-
 <title><?php hybrid_document_title(); ?></title>
-
 <link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/favicon.ico">
 <link rel="apple-touch-icon" href="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png">
-
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -76,7 +72,9 @@
 			<?php get_template_part( 'menu', 'secondary' ); // Loads the menu-secondary.php template. ?>
 
 			<div id="banner-feature">
-					<?php global $post, $wpdb; ?>
+					<?php 
+					//Get First 2 Images for the banner then load the remaining in a JS array
+					global $post, $wpdb; ?>
 					<?php $img_id = $wpdb->get_results("SELECT ID, menu_order FROM $wpdb->posts where post_parent = " . $post->ID . " and (post_mime_type = 'image/jpeg' OR post_mime_type = 'image/gif' OR post_mime_type = 'image/png') and post_type = 'attachment' ORDER BY menu_order ASC");?>
 					<?php  
 					foreach ($img_id as $img_temp) {
@@ -111,8 +109,7 @@
 							}
 						}
 					$i++;	
-					}	
-					?>
+					} ?>
 					var winSlides = [<?php echo $display; ?>];
 					var winSlideDesc = [<?php echo $display2; ?>];
 					</script>
