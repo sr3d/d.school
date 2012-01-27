@@ -112,11 +112,11 @@ function dschool_scripts(){
     if (!is_admin()) {
     	 		
  		/* Register Scripts */
- 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr.js',array('jquery'),'',false);
- 		wp_register_script( 'jquery-cycle', THEME_URI . '/js/jquery.cycle.min.js',array('jquery'),'',true);
-		wp_register_script( 'jquery-qtip', THEME_URI . '/js/jquery.qtip-1.0.0-rc3.min.js',array('jquery'),'',true);
-		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js',array('jquery'),'',true);
-		wp_register_script( 'dschool', THEME_URI . '/js/dschool.js',array('jquery'),'',true);
+ 		wp_register_script( 'modernizr', THEME_URI . '/js/modernizr.js',array('jquery'),'2.0.6',false);
+ 		wp_register_script( 'jquery-cycle', THEME_URI . '/js/jquery.cycle.min.js',array('jquery'),'2.97',true);
+		wp_register_script( 'jquery-qtip', THEME_URI . '/js/jquery.qtip-1.0.0-rc3.min.js',array('jquery'),'1.0.0-rc3',true);
+		wp_register_script( 'jquery-hoverintent', THEME_URI . '/js/jquery.hoverIntent.minified.js',array('jquery'),'r6',true);
+		wp_register_script( 'dschool', THEME_URI . '/js/dschool.js',array('jquery'),'1.00',true);
 
 		/* Enqueue Scripts */
 		wp_enqueue_script( 'modernizr' );
