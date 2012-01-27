@@ -80,14 +80,6 @@ function dschool_banner_settings_meta_box() {
 /* Validates theme settings. */
 function dschool_validate_banner_settings( $input ) {
 
-	error_log('$input = ' . print_r( $input, true ) );
-
-	/* Validate and/or sanitize the textarea. */
-//	$input['example_textarea'] = wp_filter_nohtml_kses( $input['example_textarea'] );
-
-	/* Validate and/or sanitize the text input. */
-//	$input['example_text_input'] = wp_filter_nohtml_kses( $input['example_text_input'] );
-
 	/* Return the array of theme settings. */
 	return $input;
 }
