@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Team
+ * Template Name: Bio
  *
- * A custom page template for the team page.
+ * A custom page template for display the Bio post type
  *
  * @package dschool
  * @subpackage Template
