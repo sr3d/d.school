@@ -92,6 +92,12 @@ function dschool_theme_setup() {
 	remove_action( 'wp_head', 'start_post_rel_link_wp_head ', 10, 0 ); // start link
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Display relational links for the posts adjacent to the current post.
 
+	/* Additional dschool-core extensions */
+	//add_theme_support( 'share-box' ); /* Add social sharebox to single post template */
+	//add_theme_support( 'facebook-init' ); /* Add facebook async js to theme */
+	//add_theme_support( 'facebook-opengraph' ); /* Add facebook opengraph meta to header */
+	//add_theme_support( 'show-ids' ); /* Show ID's in dashboard */
+
 }
 
 /**

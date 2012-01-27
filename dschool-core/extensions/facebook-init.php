@@ -21,7 +21,8 @@
 $prefix = hybrid_get_prefix();
 
 function facebook_init() {
-
+	
+	/* Need to convert these to settings */
 	$appID = '113081408711064'; 
 	$channelURL = DSCHOOL_URL . '/extensions/facebook-channel-file.html';
 	
