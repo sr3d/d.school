@@ -69,8 +69,7 @@ class DSCHOOLCore {
 	
 	function dschool_shortcodes() {
 
-		/* Example call to shortcode file - can be enabled/disabled by child themes */
-		//require_if_theme_supports( 'shortcode-columns', DSCHOOL_DIR . '/shortcodes/columns.php' );
+		require_if_theme_supports( 'shortcode-list-posts', DSCHOOL_DIR . '/shortcodes/list-posts.php' );
 				
 	}
 	
