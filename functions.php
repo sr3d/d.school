@@ -98,6 +98,9 @@ function dschool_theme_setup() {
 	//add_theme_support( 'facebook-opengraph' ); /* Add facebook opengraph meta to header */
 	//add_theme_support( 'show-ids' ); /* Show ID's in dashboard */
 
+	/* Additional dschool-core shortcodes */
+	//add_theme_support( 'shortcode-list-posts' ); /* Shortcode for display list of posts based on category and/or tag */
+
 	if ( is_admin() )
 		require_once( trailingslashit( TEMPLATEPATH ) . '/dschool-core/extensions/custom-theme-settings.php' );
 }
