@@ -37,7 +37,7 @@ get_header(); // Loads the header.php template. ?>
 						
 						<?php
 							$category = get_the_category(); 
-							echo "<a href='" . get_bloginfo('url') . "/blog/category/" . $category[0]->category_nicename . "/' title='" . $category[0]->cat_name . "' class='home-cat-name'>" . $category[0]->cat_name . "</a> "; 
+							echo "<a href='" . get_category_link($category[0]->term_id ). "' title='" . $category[0]->cat_name . "' class='home-cat-name'>" . $category[0]->cat_name . "</a> "; 
 						?>
 						
 						<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
