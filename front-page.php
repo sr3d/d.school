@@ -2,6 +2,8 @@
 /**
  * Front Page Template
  *
+ * Displays the 6 most recent posts tagged with "featured".
+ *
  * @package dschool
  * @subpackage Template
  */
