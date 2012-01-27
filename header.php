@@ -95,7 +95,7 @@
 					
 					<script type="text/javascript">
 					<?php
-					$limit = count($img_array) - 1;
+					$limit = isset( $img_array ) ? count($img_array) - 1 : 0;
 					$i = 0;
 					$display = '';
 					$display2 = '';
@@ -117,19 +117,22 @@
 			</div><!-- #banner-feature -->
 			
 			<div id="banner-side">
+
+			<?php foreach( array( 'top', 'bottom' ) as $position ) : ?>
+
+				<div id="banner-side-<?php echo $position; ?>">
+					<a href="<?php echo hybrid_get_setting( 'banner_side_'.$position.'_link' ); ?>" <?php echo ( 'on' == hybrid_get_setting( 'banner_side_'.$position.'_link_is_video' ) ) ? 'class="feature-vid"' : 'class="manifesto" rel="lightbox"'; ?>>
+						<span class="title"><?php echo hybrid_get_setting( 'banner_side_'.$position.'_title' ); ?></span>
+						<span><?php echo hybrid_get_setting( 'banner_side_'.$position.'_copy' ); ?></span>
+					</a>
+				</div><!-- #banner-side-<?php echo $position; ?> -->
+
+			<?php endforeach; ?>
 			
-				<div id="banner-side-top">
-					<a href="http://player.vimeo.com/video/21568668?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" class="feature-vid"><span class="title">The d.School Class Experience</span> <span>Watch a 3-minute introduction to our Bootcamp course</span></a>
-				</div><!-- #banner-side-rop -->
-				
-				<script>
-				jQuery(document).ready(function(){jQuery(".feature-vid").colorbox({iframe:true, innerWidth:640, innerHeight:360});});
-				</script>	
-	
-				<div id="banner-side-bottom">
-					<a href="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/napkin-full.jpg" class="manifesto" rel="lightbox" ><span class="title">d.Manifesto</span> <span>all you need to know - on a napkin</span></a>
-				</div><!-- #banner-side-bottom -->
-				
+			<script>
+			jQuery(document).ready(function(){jQuery(".feature-vid").colorbox({iframe:true, innerWidth:640, innerHeight:360});});
+			</script>	
+
 			</div><!-- #banner-sider -->
 			
 		</div><!-- #banner -->

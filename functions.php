@@ -98,6 +98,8 @@ function dschool_theme_setup() {
 	//add_theme_support( 'facebook-opengraph' ); /* Add facebook opengraph meta to header */
 	//add_theme_support( 'show-ids' ); /* Show ID's in dashboard */
 
+	if ( is_admin() )
+		require_once( trailingslashit( TEMPLATEPATH ) . '/dschool-core/extensions/custom-theme-settings.php' );
 }
 
 /**
