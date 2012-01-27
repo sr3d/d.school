@@ -69,15 +69,15 @@ class DSCHOOLCore {
 	
 	function dschool_shortcodes() {
 
-		/* Shortcode Columns. */
-		//require_if_theme_supports( 'shortcode-columns', EEX_DIR . '/shortcodes/columns.php' );
+		/* Example call to shortcode file - can be enabled/disabled by child themes */
+		//require_if_theme_supports( 'shortcode-columns', DSCHOOL_DIR . '/shortcodes/columns.php' );
 				
 	}
 	
 	function dschool_widgets() {
 
-		/* Featured Articles. */
-		//require_if_theme_supports( 'widget-featured-articles', EEX_DIR . '/widgets/featured-articles.php' );
+		/* Example call to widgets file - can be enabled/disabled by child themes */
+		//require_if_theme_supports( 'widget-featured-articles', DSCHOOL_DIR . '/widgets/featured-articles.php' );
 	
 	}	
 
@@ -108,7 +108,7 @@ if (!function_exists( "remove_wpautop")) {
  * Defaults to false - so the sidebar should not be hidden.
  * 
  * @since 1.0
- * @author Jason Conroy <jason@findingsimple.com>
+ * @author Brent Shepherd <brent@findingsimple.com>
  * @package dschool
  */
 function dschool_hide_sidebar() {
